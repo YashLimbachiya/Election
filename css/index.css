@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: monospace;
+}
+
+#logo {
+	margin-top: 100px;
+	height: 100px;
+}
