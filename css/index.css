@@ -4,10 +4,27 @@
 
 body {
 	margin: 0;
-	font-family: monospace;
+	font-family: 'Josefin Sans Thin', sans-serif;
 }
 
 #logo {
-	margin-top: 100px;
+	margin-top: 120px;
 	height: 100px;
+}
+
+button {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transform: translateY(4px);
+}
+
+#note {
+	position: absolute;
+	bottom: 0;
+	left: 340px;
+	opacity: 0.7;
+	font-size: 1.5vw;
 }
