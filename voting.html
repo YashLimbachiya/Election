@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/voting.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400" rel="stylesheet"> <!-- Josefin Sans Font -->
+		<link rel="stylesheet" type="text/css" href="css/ratingbar.css"><!-- Rating Bar -->
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -20,43 +21,71 @@
 				<img id="logo" src="imgs/logo.png" alt="Quantiphi Logo"/>
 			</div>
 			<div class="row">
-				<div class="col-8">
-					
+				<div class="col-7">
+					<div>
+						<br><p><span class="dept_heading">Department: Facilities</span><br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat urna nec quam convallis, ut mollis dui vulputate. Sed id turpis vitae lacus porta aliquet lobortis quis nisi. Ut eget mollis odio.
+						</p>
+					</div>
+					<div>
+						<p><span class="semibold">Choose your mascot for Facilities</span> (hover over each mascot to know it’s meaning)</p>
+					</div>
 				</div>
-				<div class="col-4 next_dept">
+				<div class="col-5 next_dept">
 					<a href="#"><button class="btn btn-lg rounded-0">MOVE ON TO THE NEXT DEPARTMENT</button></a>
 				</div>
 			</div>
 			<div class="row mascots">
 				<div class="col-2">
-					<img src=".jpg" alt="">
+					<img src="imgs/oyster.jpg" alt="Oyster">
 					<p>World is my Oyster</p>
 				</div>
 				<div class="col-2">
-					<img src=".jpg" alt="">
+					<img src="imgs/cat.jpg" alt="Cat">
 					<p>Cat’s Meow</p>
 				</div>
 				<div class="col-2">
-					<img src=".jpg" alt="">
+					<img src="imgs/whale.jpg" alt="Whale">
 					<p>Whale of a time</p>
 				</div>
 				<div class="col-2">
-					<img src=".jpg" alt="">
+					<img src="imgs/elephant.jpg" alt="Elephant">
 					<p>Elephant in the room</p>
 				</div>
 				<div class="col-2">
-					<img src=".jpg" alt="">
+					<img src="imgs/fish.jpg" alt="Fish">
 					<p>Dead Fish</p>
 				</div>
 				<div class="col-2">
-					<img src=".jpg" alt="">
+					<img src="imgs/goose.jpg" alt="Goose">
 					<p>Wild Goose Chase</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-4">
-					<p>Overall Rating for Facilities (1 -lowest, 5-highest)</p>
-					<p>Rating</p>
+					<p><span class="semibold">Overall Rating for Facilities</span> (1 -lowest, 5-highest)</p>
+					<fieldset class="rating" name="rating">
+						<input type="radio" id="star5" name="rating" value="5" />
+						<label class = "full" for="star5" title="Outstanding - 5 stars"></label>
+						<input type="radio" id="star4half" name="rating" value="4.5" />
+						<label class="half" for="star4half" title="Awesome - 4.5 stars"></label>
+						<input type="radio" id="star4" name="rating" value="4" />
+						<label class = "full" for="star4" title="Very good - 4 stars"></label>
+						<input type="radio" id="star3half" name="rating" value="3.5" />
+						<label class="half" for="star3half" title="Good - 3.5 stars"></label>
+						<input type="radio" id="star3" name="rating" value="3" />
+						<label class = "full" for="star3" title="Okay - 3 stars"></label>
+						<input type="radio" id="star2half" name="rating" value="2.5" />
+						<label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="star2" name="rating" value="2" />
+						<label class = "full" for="star2" title="Bad - 2 stars"></label>
+						<input type="radio" id="star1half" name="rating" value="1.5" />
+						<label class="half" for="star1half" title="Very Bad - 1.5 stars"></label>
+						<input type="radio" id="star1" name="rating" value="1" />
+						<label class = "full" for="star1" title="Extremely Bad - 1 star"></label>
+						<input type="radio" id="starhalf" name="rating" value="0.5" />
+						<label class="half" for="starhalf" title="Horrible - 0.5 stars"></label>
+					</fieldset>
 					<p>Share your reasons for selecting Wild Goose Chase</p>
 					<ul>
 						<li>1</li>
