@@ -4,11 +4,11 @@
 
 body {
 	margin: 0;
-	font-family: 'Josefin Sans Thin', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 div {
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .logo {
@@ -38,11 +38,14 @@ p {
 	font-family: 'Josefin Sans SemiBold', sans-serif;
 }
 
+.next_dept {
+	visibility: hidden;
+}
+
 button {
 	font-family: 'Josefin Sans SemiBold', sans-serif;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	/* visibility: hidden; */
-	margin-top: 50px;
+	margin-top: 55px;
 }
 
 button:active {
@@ -50,8 +53,29 @@ button:active {
 	transform: translateY(4px);
 }
 
+.info {
+	visibility: hidden;
+}
+
+.mascots {
+	border: 1px solid lightgrey;
+	padding: 0;
+}
+
 img {
 	width: 175px;
 	height: 190px;
-	border: 1px solid;
+	/* border: 1px solid; */
+}
+
+textarea {
+	font-size: 1vw;
+	border-bottom: 1px solid lightgrey;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+}
+
+.suggestions {
+	border: 1px solid lightgrey;
 }

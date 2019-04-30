@@ -14,6 +14,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/voting.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -32,37 +33,37 @@
 					</div>
 				</div>
 				<div class="col-5 next_dept">
-					<a href="#"><button class="btn btn-lg rounded-0">MOVE ON TO THE NEXT DEPARTMENT</button></a>
+					<a href="#"><button class="btn btn-lg rounded-0" style="font-size: 1.25vw; background-color: lightgrey; color: white;">MOVE ON TO THE NEXT DEPARTMENT</button></a>
 				</div>
 			</div>
 			<div class="row mascots">
-				<div class="col-2">
+				<div id="oyster" class="col-2">
 					<img src="imgs/oyster.jpg" alt="Oyster">
-					<p>World is my Oyster</p>
+					<center><p>World is my Oyster</p></center>
 				</div>
-				<div class="col-2">
+				<div id="cat" class="col-2">
 					<img src="imgs/cat.jpg" alt="Cat">
-					<p>Cat’s Meow</p>
+					<center><p>Cat’s Meow</p></center>
 				</div>
-				<div class="col-2">
+				<div id="whale" class="col-2">
 					<img src="imgs/whale.jpg" alt="Whale">
-					<p>Whale of a time</p>
+					<center><p>Whale of a time</p></center>
 				</div>
-				<div class="col-2">
+				<div id="elephant" class="col-2">
 					<img src="imgs/elephant.jpg" alt="Elephant">
-					<p>Elephant in the room</p>
+					<center><p>Elephant in the room</p></center>
 				</div>
-				<div class="col-2">
+				<div id="fish" class="col-2">
 					<img src="imgs/fish.jpg" alt="Fish">
-					<p>Dead Fish</p>
+					<center><p>Dead Fish</p></center>
 				</div>
-				<div class="col-2">
+				<div id="goose" class="col-2">
 					<img src="imgs/goose.jpg" alt="Goose">
-					<p>Wild Goose Chase</p>
+					<center><p>Wild Goose Chase</p></center>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-4">
+			</div><br>
+			<div class="row info">
+				<div class="col-5">
 					<p><span class="semibold">Overall Rating for Facilities</span> (1 -lowest, 5-highest)</p>
 					<fieldset class="rating" name="rating">
 						<input type="radio" id="star5" name="rating" value="5" />
@@ -74,7 +75,7 @@
 						<input type="radio" id="star3half" name="rating" value="3.5" />
 						<label class="half" for="star3half" title="Good - 3.5 stars"></label>
 						<input type="radio" id="star3" name="rating" value="3" />
-						<label class = "full" for="star3" title="Okay - 3 stars"></label>
+						<label class = "full" for="star3" title="Could be Better - 3 stars"></label>
 						<input type="radio" id="star2half" name="rating" value="2.5" />
 						<label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
 						<input type="radio" id="star2" name="rating" value="2" />
@@ -86,27 +87,29 @@
 						<input type="radio" id="starhalf" name="rating" value="0.5" />
 						<label class="half" for="starhalf" title="Horrible - 0.5 stars"></label>
 					</fieldset>
-					<p>Share your reasons for selecting Wild Goose Chase</p>
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-					</ul>
+					<span id="r_comment" style="color: red;"></span>
+					<br><br><p><span class="semibold">Share your reasons for selecting</span><span id="mascot" style="color: red; font-weight: bold;"></span></p>
+					<div class="check_box">
+						<input type="checkbox" name="1" value="1"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input type="checkbox" name="2" value="2"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input type="checkbox" name="3" value="3"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input type="checkbox" name="4" value="4"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+					</div>
 				</div>
 				<div class="col-4">
-					<p>Any more reasons?</p>
-					<textarea name="" id="" cols="35" rows="1"></textarea>
-					<textarea name="" id="" cols="35" rows="1"></textarea>
-					<textarea name="" id="" cols="35" rows="1"></textarea>
-					<textarea name="" id="" cols="35" rows="1"></textarea>
-					<textarea name="" id="" cols="35" rows="1"></textarea>
-					<textarea name="" id="" cols="35" rows="1"></textarea>
+					<p class="semibold">Any more reasons?</p>
+					<textarea name="" id="" cols="45" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan"></textarea>
+					<textarea name="" id="" cols="45" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan"></textarea>
+					<textarea name="" id="" cols="45" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan"></textarea>
+					<textarea name="" id="" cols="45" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan"></textarea>
+					<textarea name="" id="" cols="45" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan"></textarea>
+					<textarea name="" id="" cols="45" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan"></textarea>
 				</div>
-				<div class="col-4">
-					<p>Suggestions</p>
-					<textarea name="" id="" cols="35" rows="8"></textarea>
+				<div class="col-3">
+					<p class="semibold">Suggestions</p>
+					<textarea class="suggestions" name="" id="" cols="33" rows="8"></textarea>
 				</div>
 			</div>
 		</div>
 	</body>
+</html>
