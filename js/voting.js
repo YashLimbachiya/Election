@@ -1,5 +1,6 @@
 $(function() {
 	var $next_dept = $(".next_dept");
+	var $next = $("#next");
 	var $oyster = $("#oyster");
 	var $cat = $("#cat");
 	var $whale = $("#whale");
@@ -7,14 +8,17 @@ $(function() {
 	var $fish = $("#fish");
 	var $goose = $("#goose");
 	var $info = $(".info");
-	var $rating = $("input");
+	var $rating = $(".rating_bar");
 	var $r_comment = $("#r_comment");
-	var $rat_value;
 	var $mascot = $("#mascot");
+	var $reasons = $(".reasons");
+	var $rat_value, $r, $reason;
+
+	$('[data-toggle="tooltip"]').tooltip();
 
 	$($oyster).click(function() {
-		$($rating).val(0);
-		alert($rat_value);
+		/*$($rating).val(0);
+		alert($rat_value);*/
 		$($info).css("visibility", "visible");
 		$($next_dept).css("visibility", "visible");
 		$($mascot).text(" World is my Oyster");
@@ -87,8 +91,9 @@ $(function() {
 	});
 
 	$($rating).change(function() {
+		$r = true;
 		$rat_value = $(this).val();
-		alert($rat_value);
+		/*alert($rat_value);*/
 		switch($rat_value) {
 			case '0.5':
 				$($r_comment).text(" HORRIBLE");
@@ -121,5 +126,29 @@ $(function() {
 				$($r_comment).text(" OUTSTANDING");
 				break;
 		}
-	})
+		btntoggle();
+	});
+
+	$($reasons).change(function() {
+		if($(".reasons:checked").length > 0) {
+			$reason = true;
+			/*alert($reason);*/
+		} else {
+			$reason = false;
+			/*alert($reason);*/
+		}
+		btntoggle();
+	});
+
+	function btntoggle() {
+		if($r == true && $reason == true) {
+			$($next).prop("disabled", false);
+			$($next).css("background-color", "#0ac266");
+			/*alert("on");*/
+		} else {
+			$($next).prop("disabled", true);
+			$($next).css("background-color", "lightgrey");
+			/*alert("off");*/
+		}
+	}
 });

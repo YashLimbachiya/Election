@@ -33,31 +33,31 @@
 					</div>
 				</div>
 				<div class="col-5 next_dept">
-					<a href="#"><button class="btn btn-lg rounded-0" style="font-size: 1.25vw; background-color: lightgrey; color: white;">MOVE ON TO THE NEXT DEPARTMENT</button></a>
+					<button id="next" class="btn btn-lg rounded-0" onclick="window.location.href='voting.html'" style="font-size: 1.25vw; background-color: lightgrey; color: white;" disabled="true">MOVE ON TO THE NEXT DEPARTMENT</button>
 				</div>
 			</div>
 			<div class="row mascots">
-				<div id="oyster" class="col-2">
+				<div id="oyster" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/oyster.jpg" alt="Oyster">
 					<center><p>World is my Oyster</p></center>
 				</div>
-				<div id="cat" class="col-2">
+				<div id="cat" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/cat.jpg" alt="Cat">
 					<center><p>Cat’s Meow</p></center>
 				</div>
-				<div id="whale" class="col-2">
+				<div id="whale" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/whale.jpg" alt="Whale">
 					<center><p>Whale of a time</p></center>
 				</div>
-				<div id="elephant" class="col-2">
+				<div id="elephant" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/elephant.jpg" alt="Elephant">
 					<center><p>Elephant in the room</p></center>
 				</div>
-				<div id="fish" class="col-2">
+				<div id="fish" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/fish.jpg" alt="Fish">
 					<center><p>Dead Fish</p></center>
 				</div>
-				<div id="goose" class="col-2">
+				<div id="goose" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/goose.jpg" alt="Goose">
 					<center><p>Wild Goose Chase</p></center>
 				</div>
@@ -66,34 +66,34 @@
 				<div class="col-5">
 					<p><span class="semibold">Overall Rating for Facilities</span> (1 -lowest, 5-highest)</p>
 					<fieldset class="rating" name="rating">
-						<input type="radio" id="star5" name="rating" value="5" />
+						<input class="rating_bar" type="radio" id="star5" name="rating" value="5" />
 						<label class = "full" for="star5" title="Outstanding - 5 stars"></label>
-						<input type="radio" id="star4half" name="rating" value="4.5" />
+						<input class="rating_bar" type="radio" id="star4half" name="rating" value="4.5" />
 						<label class="half" for="star4half" title="Awesome - 4.5 stars"></label>
-						<input type="radio" id="star4" name="rating" value="4" />
+						<input class="rating_bar" type="radio" id="star4" name="rating" value="4" />
 						<label class = "full" for="star4" title="Very good - 4 stars"></label>
-						<input type="radio" id="star3half" name="rating" value="3.5" />
+						<input class="rating_bar" type="radio" id="star3half" name="rating" value="3.5" />
 						<label class="half" for="star3half" title="Good - 3.5 stars"></label>
-						<input type="radio" id="star3" name="rating" value="3" />
+						<input class="rating_bar" type="radio" id="star3" name="rating" value="3" />
 						<label class = "full" for="star3" title="Could be Better - 3 stars"></label>
-						<input type="radio" id="star2half" name="rating" value="2.5" />
+						<input class="rating_bar" type="radio" id="star2half" name="rating" value="2.5" />
 						<label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-						<input type="radio" id="star2" name="rating" value="2" />
+						<input class="rating_bar" type="radio" id="star2" name="rating" value="2" />
 						<label class = "full" for="star2" title="Bad - 2 stars"></label>
-						<input type="radio" id="star1half" name="rating" value="1.5" />
+						<input class="rating_bar" type="radio" id="star1half" name="rating" value="1.5" />
 						<label class="half" for="star1half" title="Very Bad - 1.5 stars"></label>
-						<input type="radio" id="star1" name="rating" value="1" />
+						<input class="rating_bar" type="radio" id="star1" name="rating" value="1" />
 						<label class = "full" for="star1" title="Extremely Bad - 1 star"></label>
-						<input type="radio" id="starhalf" name="rating" value="0.5" />
+						<input class="rating_bar" type="radio" id="starhalf" name="rating" value="0.5" />
 						<label class="half" for="starhalf" title="Horrible - 0.5 stars"></label>
 					</fieldset>
 					<span id="r_comment" style="color: red;"></span>
 					<br><br><p><span class="semibold">Share your reasons for selecting</span><span id="mascot" style="color: red; font-weight: bold;"></span></p>
 					<div class="check_box">
-						<input type="checkbox" name="1" value="1"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
-						<input type="checkbox" name="2" value="2"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
-						<input type="checkbox" name="3" value="3"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
-						<input type="checkbox" name="4" value="4"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input class="reasons" type="checkbox" name="1" value="1"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input class="reasons" type="checkbox" name="2" value="2"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input class="reasons" type="checkbox" name="3" value="3"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
+						<input class="reasons" type="checkbox" name="4" value="4"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
 					</div>
 				</div>
 				<div class="col-4">
