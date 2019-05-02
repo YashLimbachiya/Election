@@ -23,7 +23,7 @@ div {
 }
 
 .dept_heading {
-	font-size: 2vw;
+	/* font-size: 2vw; */
 	font-family: 'Josefin Sans Thin', sans-serif;
 	font-weight: bold;
 }
