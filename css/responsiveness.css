@@ -1,8 +1,8 @@
 /* Extra small devices (phones, 440px and down) */
 @media only screen and (max-width: 440px) {
-	body {
+	/* body {
 		font-size: 0.5em;
-	}
+	} */
 
 	#logo {
 		width: 50%;
@@ -11,10 +11,20 @@
 }
 
 @media only screen and (max-width: 555px) {
+	.dept_head {
+		width: 100%;
+	}
+
 	/* #move {
 		font-size: 1px;
 	} */
 }	
+
+@media only screen and (max-width: 576px) {
+	.dept_heading {
+		/* font-size: 20px; */
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	#logo {
@@ -57,6 +67,12 @@
 		font-size: 16px;
 	}
 } 
+
+@media only screen and (max-width: 1080px) {
+	img{
+		width: 100%;
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

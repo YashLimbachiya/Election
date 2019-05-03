@@ -18,12 +18,12 @@
 		<script type="text/javascript" src="js/voting.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<div class="logo">
-				<img id="logo" src="imgs/logo.png" alt="Quantiphi Logo"/>
-			</div>
+		<div class="row logo">
+			<img id="logo" src="imgs/logo.png" alt="Quantiphi Logo"/>
+		</div>
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-7 dept_head">
+				<div class="col-sm-7 col-12 dept_head" style="padding: 0;">
 					<div>
 						<br><p><span class="dept_heading">Department: Facilities</span><br>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat urna nec quam convallis, ut mollis dui vulputate. Sed id turpis vitae lacus porta aliquet lobortis quis nisi. Ut eget mollis odio.
@@ -33,38 +33,38 @@
 						<p><span class="semibold">Choose your mascot for Facilities</span> (hover over each mascot to know it’s meaning)</p>
 					</div>
 				</div>
-				<div class="col-5 next_dept">
+				<div class="col-sm-5 col-12 next_dept" style="padding: 0;">
 					<button id="next" class="btn btn-lg rounded-0" onclick="window.location.href='voting.html'" style="background-color: lightgrey; color: white;" disabled="true"><span id="move">MOVE ON TO THE NEXT DEPARTMENT</span></button>
 				</div>
 			</div>
 			<div class="row mascots">
-				<div id="oyster" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
+				<div id="oyster" class="col-sm-2 col-4" style="padding: 0;" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/oyster.jpg" alt="Oyster">
 					<center><p>World is my Oyster</p></center>
 				</div>
-				<div id="cat" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
+				<div id="cat" class="col-sm-2 col-4" style="padding: 0;" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/cat.jpg" alt="Cat">
 					<center><p>Cat’s Meow</p></center>
 				</div>
-				<div id="whale" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
+				<div id="whale" class="col-sm-2 col-4" style="padding: 0;" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/whale.jpg" alt="Whale">
 					<center><p>Whale of a time</p></center>
 				</div>
-				<div id="elephant" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
+				<div id="elephant" class="col-sm-2 col-4" style="padding: 0;" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/elephant.jpg" alt="Elephant">
 					<center><p>Elephant in the room</p></center>
 				</div>
-				<div id="fish" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
+				<div id="fish" class="col-sm-2 col-4" style="padding: 0;" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/fish.jpg" alt="Fish">
 					<center><p>Dead Fish</p></center>
 				</div>
-				<div id="goose" class="col-2" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
+				<div id="goose" class="col-sm-2 col-4" style="padding: 0;" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership">
 					<img src="imgs/goose.jpg" alt="Goose">
 					<center><p>Wild Goose Chase</p></center>
 				</div>
 			</div><br>
 			<div class="row info">
-				<div class="col-5">
+				<div class="col-5" style="padding: 0;">
 					<p><span class="semibold">Overall Rating for Facilities</span> (1 -lowest, 5-highest)</p>
 					<fieldset class="rating" name="rating">
 						<input class="rating_bar" type="radio" id="star5" name="rating" value="5" />
@@ -97,7 +97,7 @@
 						<input class="reasons" type="checkbox" name="4" value="4"><span class="dept_heading" style="font-size: 0.9vw;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan</span><br>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4" style="padding: 0;">
 					<p class="semibold">Any more reasons?</p>
 					<textarea name="" id="" cols="40" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
 					<textarea name="" id="" cols="40" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
@@ -106,7 +106,7 @@
 					<textarea name="" id="" cols="40" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
 					<textarea name="" id="" cols="40" rows="1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
 				</div>
-				<div class="col-3">
+				<div class="col-3" style="padding: 0;">
 					<p class="semibold">Suggestions</p>
 					<textarea class="suggestions" name="" id="" cols="28" rows="8"></textarea>
 				</div>

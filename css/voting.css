@@ -8,7 +8,7 @@ body {
 }
 
 div {
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .logo {
@@ -29,7 +29,7 @@ div {
 }
 
 p {
-	font-size: 1vw;
+/* 	font-size: 1vw; */
 	font-family: 'Josefin Sans Thin', sans-serif;
 	font-weight: lighter;
 }
@@ -65,7 +65,7 @@ button:active:enabled {
 img {
 	width: 175px;
 	height: 190px;
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 textarea {
