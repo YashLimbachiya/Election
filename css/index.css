@@ -8,8 +8,45 @@ body {
 }
 
 #logo {
-	margin-top: 120px;
+	margin-top: 10%;
 	height: 100px;
+}
+
+#welcome {
+	font-size: 60px;
+}
+
+/* Extra small devices (phones, 440px and down) */
+@media only screen and (max-width: 440px) {
+	#welcome {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#button {
+		font-size: 11px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#button {
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#welcome {
+		font-size: 50px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#button {
+		font-size: 16px;
+	}
 }
 
 button {
@@ -23,7 +60,8 @@ button:active {
 }
 
 #note {
-	margin-top: 162px;
-	opacity: 0.7;
-	font-size: 1.5vw;
+	margin-top: 13%;
+	opacity: 0.9;
+	font-size: 14px;
+	font-weight: bold;
 }

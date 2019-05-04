@@ -36,6 +36,7 @@ p {
 }
 
 .semibold {
+	font-size: 20px;
 	font-family: 'Josefin Sans SemiBold', sans-serif;
 }
 
@@ -69,6 +70,14 @@ img {
 	/* border: 1px solid; */
 }
 
+#r_comment {
+	font-size: 16px;
+}
+
+#mascot {
+	font-size: 16px;
+}
+
 .res {
 	font-size: 12px;
 }
@@ -79,7 +88,6 @@ textarea {
 	border-right: 0;
 	border-left: 0;
 	border-top: 0;
-	margin-left: 5%;
 	width: 90%;
 }
 
