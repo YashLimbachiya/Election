@@ -14,7 +14,7 @@ h1 { font-size: 2em; margin: 10px; }
 .rating > input { display: none; } 
 .rating > label:before { 
   margin: 0 5px 5px 5px;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f005";

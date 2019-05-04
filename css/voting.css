@@ -5,6 +5,7 @@
 body {
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
 }
 
 div {
@@ -23,15 +24,15 @@ div {
 }
 
 .dept_heading {
-	/* font-size: 2vw; */
+	/* font-size: 32px; */
 	font-family: 'Josefin Sans Thin', sans-serif;
 	font-weight: bold;
 }
 
 p {
-/* 	font-size: 1vw; */
+	font-size: 24px;
 	font-family: 'Josefin Sans Thin', sans-serif;
-	font-weight: lighter;
+	font-weight: bold;
 }
 
 .semibold {
@@ -68,12 +69,18 @@ img {
 	/* border: 1px solid; */
 }
 
+.res {
+	font-size: 12px;
+}
+
 textarea {
-	font-size: 1vw;
+	font-size: 12px;
 	border-bottom: 1px solid lightgrey;
 	border-right: 0;
 	border-left: 0;
 	border-top: 0;
+	margin-left: 5%;
+	width: 90%;
 }
 
 .suggestions {
